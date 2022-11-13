@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.977);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.mainDivCon {
+    width: 50%;
+    height: 70vh;
+    box-shadow: 1px 2px 15px 5px #383838, 
+                1px 2px 15px 5px #383838;
+}
+.gameTitle {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: #FFFFFF;
+    text-shadow: 2px 3px 1px #6e6e6e;
+}
+.score-board {
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 15px 5px #383838 inset, 
+                1px 2px 15px 5px #383838 inset;
+    text-shadow: 2px 3px 1px #000000;
+    
+}
+.score-container {
+    background-color: burlywood;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playerScore {
+    background-color: blue;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botScore {
+    background-color: green;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wl-display{
+    text-align: center;
+}
+.rst-Btn {
+   border-radius: 30px;
+   padding: 10px 20px;
+   background-color: rgba(0, 26, 255, 0.988);
+   color: white;
+   font-size: 10px;
+   font-weight: bolder;
+   box-shadow: -2px 2px 2px 2px rgba(117, 117, 117, 0.988),
+                1px 1px 1px 2px rgba(0, 255, 255, 0.977) inset ;
+   border: none;
+}
+.rst-Btn:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.rst-Btn:active{
+    opacity: .7;
+}
+.game-display {
+    width: 100%;
+    height: 50%;
+    color: white;
+    display: flex;
+} 
+.choice-display {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.history-display {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.button-container {
+    width: 100%;
+    height: 15%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    box-shadow: 1px 2px 15px 5px rgba(0, 255, 255, 0.977) inset, 
+    1px 2px 15px 5px #383838 inset;
+}
+.Btn {
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 400px; 
+    margin-right: 20px;
+    border-radius: 30px;
+    padding: 28px 35px;
+    background-color: rgba(0, 26, 255, 0.988);
+    box-shadow: -2px 2px 2px 2px rgba(0, 255, 255, 0.977),
+                1px 1px 1px 2px rgba(224, 224, 224, 0.988) inset ;
+    border: none;
+}
+.Btn:hover {
+    cursor: pointer;
+    box-shadow: -2px 2px 2px 2px rgba(255, 0, 0, 0.977),
+                1px 1px 1px 2px rgba(252, 202, 0, 0.988) inset ;
+}
+.Btn:active {
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .mainDivCon{
+        width: 98vw;
+        min-height: 98vh;
+    }
+    .rst-Btn {
+        padding: 0px;
+        font-size: 10px;
+    }
+}
